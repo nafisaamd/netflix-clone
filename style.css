@@ -1,0 +1,444 @@
+body{
+  height: 3000px;
+  font-family: sans-serif;
+  margin: 0;
+  background-color: black;
+}
+
+.header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 55px;
+  padding-right: 55px;
+  padding-top: 0px;
+}
+
+.netflix-logo{
+  height: 105px;
+  width: 185px;
+  object-fit: contain;
+}
+
+.sign-in{
+  padding: 9px 17px 9px 17px;
+  color: white;
+  background-color: rgb(229,9,20);
+  border: none;
+  border-radius: 4px;
+  word-spacing: 1x;
+  margin-right: 20px;
+}
+
+.sign-up-page{
+  border: 1px solid black;
+  height: 906px;
+ background-image: linear-gradient(rgba(0, 0, 0, 0.6)),  url(./images/Netflix_Background_Image.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.sign-up-page-text{
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+.sign-up-page-text h1{
+  text-align: center;
+  line-height: 1.4;
+  width: 370px;
+  margin-bottom: 0;
+  font-size: 35px;
+}
+
+.sign-up-page-text h4{
+  margin-top: 0;
+  margin-bottom: 12px;
+  width: 450px;
+  text-align: center;
+  line-height: 1.4;
+  font-weight: 100;
+}
+
+.sign-up-form{
+  display: flex;
+  flex-direction: row;
+  margin-top: 8px;
+}
+
+.sign-up-form input{
+  caret-color: #333333;
+  padding: 14px 120px 14px 10px;
+  font-size: 16px;
+  margin-right: 8px;
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.sign-up-form input::placeholder{
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.sign-up-form button{
+  caret-color: rgb(255, 255, 255);
+  color: white;
+  background-color: rgb(229,9,20);
+  padding: 18px 35px 18px 28px;
+  font-size: 16px;
+  margin-right: 8px;
+  border: 1px solid rgb(229,9,20);
+  border-radius: 5px;
+}
+
+.header2-container{
+  padding-left: 32px;
+  padding-right: 32px;
+  border-top: 2px solid;
+  border-image: linear-gradient(to right, red, orange, yellow) 1;
+  background: radial-gradient(50% 500% at 50% -420%, rgba(64, 97, 231, 0.4) 80%, rgba(0, 0, 0, 0.1) 100%), black;
+}
+
+.header2{
+  padding-top: 28px;
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+.header2 h2{
+  color: white;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.trending-shows{
+  background: radial-gradient(50% 500% at 50% -410%, rgba(71, 107, 252, 0.4) 60%, rgba(0, 0, 0, 0.1) 100%), black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 80px 12px 80px;
+}
+
+.trending-image img{
+  height: 200px;
+  border-radius: 10px;
+}
+
+.trending-image{
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.trending-image:hover{
+  transform: scale(1.05);
+}
+
+.image-number{
+    bottom: 1px;
+    left: -28px;
+    position: absolute;
+    font-weight: bolder;
+    color: black(65, 65, 65);
+    -webkit-text-stroke: 1px rgb(255, 255, 255);
+    text-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.5);
+    font-size: 95px;
+}
+
+.more-reasons-text{
+  background-color: black;
+  color: white;
+  height: 90px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.more-reasons-text h2{
+  margin-top: 0;
+  padding-top: 50px;
+  font-weight: 400;
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+.reasons-container{
+  display: flex;
+  flex: row;
+  margin-bottom: 15px;
+  background-color: black;
+  margin-bottom: 0;
+  padding-left: 105px;
+  padding-right: 105px;
+  padding-bottom: 20px;
+}
+
+.reasons{
+  width: 650px;
+  height: 155px;
+  border-radius: 12px;
+  padding-top: 25px;
+  padding-bottom: 15px;
+  margin-right: 10px;
+  position: relative;
+  color: white;
+  margin-bottom: 0;
+}
+
+.reasons h2{
+  margin-top: 0;
+  margin-left: 32px;
+  margin-right: 32px;
+}
+
+.reasons h4{
+  margin-top: 0;
+  font-weight: 300;
+  margin-left: 32px;
+  margin-right: 32px;
+  width: 490px;
+}
+
+.reasons-img{
+  position: absolute;
+  bottom: 30px;
+  right: 20px;
+}
+
+.reasons-img img{
+  width: 45px;
+  color: white;
+}
+
+.faq-text{
+  background-color: black;
+  color: white;
+  height: 70px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.faq-text h2{
+  margin-top: 0;
+  padding-top: 5px;
+  font-weight: 300;
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+.faq-container{
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+}
+.faq-container button{
+  cursor: pointer;
+}
+
+.faq{
+  border: 1px solid black;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px 15px 4px 15px;
+  margin-bottom: 10px;
+  margin-left: 100px;
+  margin-right: 100px;
+  background-color: #333333;
+  color: white;
+  font-weight: bold;
+}
+
+.faq-container button{
+  background-color: black;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.faq-h2{
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.faq-plus{
+    font-size: 80px;
+    font-weight: lighter;
+    line-height: 1.2;
+}
+
+.footer1{
+  background-color: black;
+}
+
+.sign-up-page-text1{
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0;
+  padding-top: 50px;
+  padding-bottom: 10px;
+}
+
+.sign-up-page-text1 h4{
+  margin-top: 0;
+  margin-bottom: 12px;
+  width: 600px;
+  text-align: center;
+  line-height: 1.4;
+  font-weight: 100;
+}
+
+.sign-up-form1{
+  display: flex;
+  flex-direction: row;
+  margin-top: 8px;
+}
+
+.sign-up-form1 input{
+  caret-color: #333333;
+  padding: 14px 230px 14px 10px;
+  font-size: 16px;
+  margin-right: 8px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.sign-up-form1 input::placeholder{
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.sign-up-form1 button{
+  caret-color: rgb(255, 255, 255);
+  color: white;
+  background-color: rgb(229,9,20);
+  padding: 18px 35px 18px 28px;
+  font-size: 16px;
+  margin-right: 8px;
+  border: 1px solid rgb(229,9,20);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.footer2{
+  background-color: black;
+  padding-left: 80px;
+  padding-top: 50px;
+  padding-bottom: 15px;
+}
+
+.footer2 a{
+  color: white;
+}
+
+.footer{
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+  justify-content: space-between;
+}
+
+.row1{
+  display: flex;
+  flex-direction: column;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.row1 a{
+  padding: 10px;
+  color: white;
+  font-size: 13px;
+}
+
+.language-dropdown{
+  position: relative;
+  display: inline-block;
+  font-family: sans-serif;
+}
+
+.language-button{
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-right: 35px;
+  padding-left: 15px;
+  border: 1px solid white;
+  margin-bottom: 20px;
+}
+
+.language-button::after{
+  content: ">";
+  font-size: 10px;
+}
+
+.language-menu{
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #333;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-top: 5px;
+  display: none;
+  flex-direction: column;
+  width: 100%;
+}
+
+.language-toggle:checked + .language-button + .language-menu{
+  display: flex;
+}
+
+.language-menu div{
+  padding: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+.language-menu div:hover{
+  background-color: #555;
+}
+
+.language-toggle{
+  display: none;
+}
+
+.language-dropdown-container{
+  background-color: black;
+  padding-top: 50px;
+  padding-left: 80px;
+}
+
+.footer-info{
+  background-color: black;
+  color: white;
+  padding-right: 80px;
+  padding-left: 80px;
+  display: flex;
+  flex-direction: column;
+  font-size: 13px;
+  padding-bottom: 80px;
+}
+
+.page-protection a{
+  color: lightblue;
+}
